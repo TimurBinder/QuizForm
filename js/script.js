@@ -1,19 +1,26 @@
 const slider = document.getElementById("quiz_block_left_offer");
 const slide = document.getElementsByClassName("quiz_block_left_slide");
+const sliderBlock = document.getElementById("quiz_block_form");
+
 const next = document.getElementById("quiz_block_next-btn");
 const previous = document.getElementById("quiz_block_previous-btn");
+
 const variation = document.getElementsByClassName("quiz_block_left_offer_variation");
 const variationImg = document.getElementsByClassName("quiz_block_left_offer_variation_img");
+
 const tickBlock = document.getElementsByClassName("quiz_block_left_offer_variation_tick_block");
 const tick = document.getElementsByClassName("quiz_block_left_offer_variation_tick");
+
 const progressLine = document.getElementById("quiz_block_left_offer_calculate_progress");
 const progressNumber = document.getElementById("quiz_block_left_offer_calculate_percent");
 const progressBlock = document.getElementById("quiz_block_left_offer_calculate");
-const sliderBlock = document.getElementById("quiz_block_form");
+
 const phoneBlock = document.getElementById("quiz_block_left_offer_wrapper_phone");
 const phoneInput = document.querySelector("#quiz_block_left_offer_phone_form_input");
+
 const inputQuizGet = document.getElementsByClassName("quiz_block_left_offer_radio");
 const inputQuiz = document.getElementsByClassName("quiz_block_left_offer_phone_form_input-hidden");
+
 let slideWidth = slider.clientWidth;
 let slideTranslate = 0;
 let sliderPage = 0;

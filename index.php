@@ -44,10 +44,15 @@ if (!empty($_POST)) {
     <section class="quiz">
         <div class="content">
             <div class="quiz_block">
+
+            <!-- Левая часть опросника -->
                 <div class="quiz_block_left">
+                    <!-- Опросник -->
                     <form class="quiz_block_form" id="quiz_block_form" method="post">
                         <div class="quiz_block_left_offer" id="quiz_block_left_offer">
                             <div class="quiz_block_left_offer_wrapper">
+
+                            <!-- Слайд 1 -->
                                 <div class="quiz_block_left_slide">
                                     <h1 class="quiz_block_left_offer_title">1. Какая у вас ситуация?</h1>
                                     <p class="quiz_block_left_offer_intro">Выберите ситуацию и рассчитайте стоимость лечения прямо сейчас без звонка</p>
@@ -99,7 +104,8 @@ if (!empty($_POST)) {
                                         </figure>
                                     </div>
                                 </div>
-    
+
+                            <!-- Слайд 2 -->
                                 <div class="quiz_block_left_slide">
                                     <h1 class="quiz_block_left_offer_title">2. На какой челюсти нужно сделать зубы?</h1>
                                     <p class="quiz_block_left_offer_intro"><span class="black">Осталось 4 вопроса</span> и вы узнаете стоимость восстановления зубов по технологии All-on-4</p>
@@ -152,6 +158,7 @@ if (!empty($_POST)) {
                                     </div>
                                 </div>
 
+                            <!-- Слайд 3 -->
                                 <div class="quiz_block_left_slide">
                                     <h1 class="quiz_block_left_offer_title">3. Хотите провести операцию во сне?</h1>
                                     <p class="quiz_block_left_offer_intro"><span class="black">Осталось 3 вопроса</span> и вы узнаете стоимость восстановления зубов по технологии All-on-4</p>
@@ -204,6 +211,7 @@ if (!empty($_POST)) {
                                     </div>
                                 </div>
 
+                            <!-- Слайд 4 -->
                                 <div class="quiz_block_left_slide">
                                     <h1 class="quiz_block_left_offer_title">4. Какой бюджет рассматриваете?</h1>
                                     <p class="quiz_block_left_offer_intro"><span class="black">Осталось 2 вопроса</span> и вы узнаете стоимость восстановления зубов по технологии All-on-4</p>
@@ -256,6 +264,7 @@ if (!empty($_POST)) {
                                     </div>
                                 </div>
 
+                            <!-- Слайд 5 -->
                                 <div class="quiz_block_left_slide">
                                     <h1 class="quiz_block_left_offer_title">5. Будете оформлять налоговый вычет 15%?</h1>
                                     <p class="quiz_block_left_offer_intro"><span class="black">Остался 1 вопрос</span> и вы узнаете стоимость восстановления зубов по технологии All-on-4</p>
@@ -308,6 +317,7 @@ if (!empty($_POST)) {
                                     </div>
                                 </div>
 
+                            <!-- Слайд 6 -->
                                 <div class="quiz_block_left_slide">
                                     <h1 class="quiz_block_left_offer_title">6. Когда планируете начать лечение?</h1>
                                     <p class="quiz_block_left_offer_intro"><span class="black">Последний вопрос</span> – и вы узнаете стоимость восстановления зубов по технологии All-on-4</p>
@@ -361,6 +371,8 @@ if (!empty($_POST)) {
                                 </div>
                             </div>
 
+                        <!-- Кнопки -->
+                        <!-- Кнопка Назад -->
                             <div class="quiz_block_btn_block" id="quiz_block_previous-btn_block">
                                 <span class="quiz_block_previous-btn" id="quiz_block_previous-btn">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"> 
@@ -373,6 +385,8 @@ if (!empty($_POST)) {
                                     </svg>
                                     <span>Назад</span>
                                 </span>
+
+                            <!-- Кнопка Вперед -->
                                 <span class="quiz_block_next-btn" id="quiz_block_next-btn">
                                     <span>Дальше</span>
                                     <svg class="quiz_block_next-btn_arrow" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"> 
@@ -387,6 +401,8 @@ if (!empty($_POST)) {
                             </div>
                         </div>
                     </form>
+
+                <!-- Процесс рассчета стоимости -->
                     <div class="quiz_block_left_offer_wrapper_calculate" id="quiz_block_left_offer_calculate">
                         <h2 class="quiz_block_left_offer_title">Готово! Рассчитываем стоимость лечения...</h2>
                         <p class="quiz_block_left_offer_intro">Это займет всего несколько секунд</p>
@@ -396,6 +412,7 @@ if (!empty($_POST)) {
                         <p class="quiz_block_left_offer_calculate_percent" id="quiz_block_left_offer_calculate_percent"></p>
                     </div>
 
+                <!-- Форма с номером телефона -->
                     <div class="quiz_block_left_offer_wrapper_phone" id="quiz_block_left_offer_wrapper_phone">
                         <h1 class="quiz_block_left_offer_title">Заполните форму и получите расчёт через 5 секунд</h1>
                         <form action="index.php" method="post" class="quiz_block_left_offer_phone_form">
@@ -417,7 +434,11 @@ if (!empty($_POST)) {
                         </p>
                     </div>
                 </div>
+
+            <!-- Правая часть опросника -->
                 <div class="quiz_block_right">
+                    
+                <!-- Первый блок -->
                     <div class="quiz_block_right_time_wrapper">
                         <div class="quiz_block_right_info">
                             <div class="quiz_block_right_time">
@@ -432,6 +453,8 @@ if (!empty($_POST)) {
                             </div>
                         </div>
                     </div>
+
+                <!-- Второй блок -->
                     <div class="quiz_block_right_bonuses_wrapper">
                         <div class="quiz_block_right_bonuses">
                             <div class="quiz_block_right_bonuses_card">
@@ -452,6 +475,7 @@ if (!empty($_POST)) {
             </div>
         </div>
     </section>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/dependencyLibs/inputmask.dependencyLib.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.min.js"></script>
     <script src="js/script.js"></script>
